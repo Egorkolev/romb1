@@ -1,11 +1,2 @@
-rows = int(input('введите высоту треугольника:'))
-cols = 12
+print(len(set([int(i) for i in input('введите список чисел:').split()])))
 
-for i in range(rows):
-    print(i, end='\t')
-    for j in range(cols):
-        if i == rows - 1:
-            print('* ', end='')
-        else:
-            print(' ', end='')
-    print()
